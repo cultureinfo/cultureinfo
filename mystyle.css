@@ -2,3 +2,6 @@ body
 {
 background-color:#BDD6EE
 }
+.img-circle {
+    border-radius: 50%;
+}
