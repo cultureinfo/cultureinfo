@@ -4,37 +4,8 @@
 <title>HOME</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="mystyle.css">
- <link rel="stylesheet"
-  	href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
- <link rel="stylesheet"
-  	href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-<body>
-
-<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large"
-  onclick="w3_close()">Close &times;</button>
-  <a href="home.html" class="w3-bar-item w3-button">Home</a>
-  <a href="regions.html" class="w3-bar-item w3-button">Regions</a>
-  <a href="asia.html" class="w3-bar-item w3-button">|||Asia</a>
-  <a href="europe.html" class="w3-bar-item w3-button">|||Europe</a>
-  <a href="africa.html" class="w3-bar-item w3-button">|||Africa</a>
-  <a href="northamerica.html" class="w3-bar-item w3-button">|||North America</a>
-  <a href="southamerica.html" class="w3-bar-item w3-button">|||South America</a>
-  <a href="oceania.html" class="w3-bar-item w3-button">|||Oceania</a>
-  <a href="caribbean.html" class="w3-bar-item w3-button">|||Caribbean</a>
-  <a href="middleeast.html" class="w3-bar-item w3-button">|||Middle East</a>
-  <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
-  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-</div>
-
-<div zclass="w3-main" id="main">
-
-<div class="w3-light_blue">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <link rel="stylesheet"
-  	href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
   body {
 	font-family:'Muli', sans-serif;
 	font-size: 15px;
@@ -61,6 +32,37 @@ td {
 	 
   </style>
   </head>
+	
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="home.html" class="w3-bar-item w3-button">Home</a>
+  <a href="regions.html" class="w3-bar-item w3-button">Regions</a>
+  <div class="w3-dropdown-hover">
+  <button class="w3-button">Countries <i class="fa fa-caret-down"></i></button>
+  <div class="w3-dropdown-content w3-bar-block">
+  <a href="asia.html" class="w3-bar-item w3-button">Asia</a>
+  <a href="europe.html" class="w3-bar-item w3-button">Europe</a>
+  <a href="africa.html" class="w3-bar-item w3-button">Africa</a>
+  <a href="northamerica.html" class="w3-bar-item w3-button">North America</a>
+  <a href="southamerica.html" class="w3-bar-item w3-button">South America</a>
+  <a href="oceania.html" class="w3-bar-item w3-button">Oceania</a>
+  <a href="caribbean.html" class="w3-bar-item w3-button">Caribbean</a>
+  <a href="middleeast.html" class="w3-bar-item w3-button">Middle East</a>
+  </div>
+  </div>
+  <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+  </div> 
+
+<div zclass="w3-main" id="main">
+
+<div class="w3-light_blue">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <link rel="stylesheet"
+  	href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
  <script>
 function w3_open() {
   document.getElementById("main").style.marginLeft = "15%";
