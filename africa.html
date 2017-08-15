@@ -41,7 +41,7 @@ td {
   <a href="home.html" class="w3-bar-item w3-button">Home</a>
   <a href="regions.html" class="w3-bar-item w3-button">Regions</a>
   <div class="w3-dropdown-hover">
-  <button class="w3-button">Countries <i class="fa fa-caret-down"></i></button>
+  <button class="w3-button" onclick="myDropFunc()">Countries <i class="fa fa-caret-down"></i></button>
   <div class="w3-dropdown-content w3-bar-block">
   <a href="asia.html" class="w3-bar-item w3-button">Asia</a>
   <a href="europe.html" class="w3-bar-item w3-button">Europe</a>
@@ -85,6 +85,7 @@ function myAccFunc() {
         x.previousElementSibling.className = 
         x.previousElementSibling.className.replace(" w3-green", "");
     }
+}
 </script>
 	<div style="margin-left:2%">
 	<div style="margin-right:2%">
