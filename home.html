@@ -29,6 +29,7 @@ td {
 .w3-light_blue{
 	background-color:#add8e6;
 	  }
+.mySlides {display:none;}
 	 
   </style>
   </head>
@@ -84,6 +85,19 @@ function myAccFunc() {
         x.previousElementSibling.className.replace(" w3-green", "");
     }
 }
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 </script>
 	<div style="margin-left:2%">
 	<div style="margin-right:2%">
@@ -94,10 +108,13 @@ function myAccFunc() {
 	  <br>to Your Screen</h3>
   <hr>
   <h3 style = "text-align:center">Welcome to CULTURE+!</h3
-<div class="w3-container">
-  <div class="w3-display-container w3-text-white">
-    <img src="https://t3.ftcdn.net/jpg/00/96/90/64/240_F_96906416_lQc2sr0YTrTmhW7sGIeQbXRWDAsAzZ6b.jpg" alt="Lights" style="width:100%">
-
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://ak9.picdn.net/shutterstock/videos/3312053/thumb/1.jpg?i10c=img.resize(height:160)" style="width:100%">
+  <img class="mySlides" src="http://www.inc.com/uploaded_files/image/create-a-unified-company-culture-pop_7524.jpg" style="width:100%">
+  <img class="mySlides" src="http://www.halogensoftware.com/uploads/blog/why-culture-was-2014s-word-of-the-year/_thumb/848x450/why-culture-was-2014s-word-of-the-year.png" style="width:100%">
+  <img class="mySlides" src="http://diversityandchange.com/wp-content/uploads/2013/03/world-in-your-hands.jpg" style="width:100%">
+  <img class="mySlides" src="http://islamabadscene.com/wp-content/uploads/2016/05/diversity-culture.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.robeson.k12.nc.us/cms/lib/NC01000307/Centricity/Domain/250/globe-hands.jpg" style="width:100%">
 </div>
   <h4>This site aims to provide information about different cultures to help people better understand people of different cultures. <br> 
 	  Different cultures have very different customs and traditions. It is important to be considerate of other people's cultures, 
